@@ -47,7 +47,7 @@ def rps_game():
     user_choice = input("Rock, Paper, Scissor ? : ")
     
     print(f"Computer does choose : {computer_choice}")
-    if (user_choice == computer_choice):
+    if (user_choice.lower() == computer_choice):
         print("Draw ! you must restart !\n")
         rps_game()
     elif (computer_choice == 'rock' and user_choice.lower() == 'scissor'):
